@@ -1,5 +1,6 @@
 // for name
-function setName(){
+const setName = document.getElementById('setName');
+setName.onclick =()=> {
     const firstname = document.getElementById('first-name').value;
     localStorage.setItem("FIRSTNAME", firstname);
 }
