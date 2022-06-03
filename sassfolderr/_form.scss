@@ -1,0 +1,42 @@
+h2{
+    color: var(--primary-color);
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+form input{
+    background: transparent;
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: inherit;
+   
+}
+form .no-outline{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: transparent;
+}
+form .button input{
+    border: none;
+    cursor: pointer;
+}
+form .button input:hover{
+    color: #fff;
+}
+.no-outline:focus {
+    outline: none;
+}
+#btnFocus{
+  display: none;
+}
+form .fa-times-circle{
+  font-size: 1.5rem;
+  cursor: pointer;
+}

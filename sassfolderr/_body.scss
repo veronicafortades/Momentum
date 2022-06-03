@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #fff;
+  
+  }
+
+html, body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Rancho', cursive;
+    min-height: 100vh;
+    object-fit: cover;
+    align-items: center;
+    background-size: cover;
+    background-position:center;
+    overflow: hidden;
+   
+}

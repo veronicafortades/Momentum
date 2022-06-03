@@ -8,6 +8,7 @@ window.addEventListener('load' , () => {
     
     const mainfocus = localStorage.getItem('MAIN');
     document.getElementById('content').innerHTML = ` ${mainfocus} <span class="icon" onclick="deleteTask2()"><i class="fas fa-times-circle"></i></span>`;
+
     if (mainfocus !== null){ //if mainfocus has value
         form.style.display = "none"
         document.getElementById('focusToday').innerHTML = "Today"
@@ -15,6 +16,20 @@ window.addEventListener('load' , () => {
      else{
         document.getElementById('content').innerHTML = "";
           
+     }
+
+    document.getElementById('addQuote').innerHTML = "Add Quote"
+    const newquote = localStorage.getItem('NEWQUOTE');
+    //document.getElementById('addnewQuote').innerHTML = ` "${newquote}" <span class="icon" onclick="deleteTask3()"><i class="fas fa-times-circle"></i></span>`;
+    
+    if (newquote !== null){ //if newquote has value
+        document.getElementById('newquote1').style.display = "none"
+        document.getElementById('addQuote').innerHTML = "My Quote for Today";
+        document.getElementById('addnewQuote').innerHTML = ` "${newquote}" <span class="icon" onclick="deleteTask3()"><i class="fas fa-times-circle"></i></span>`;
+    }
+     else{
+        document.getElementById('addnewQuote').innerHTML = " ";
+  
      }
 })
 
@@ -26,6 +41,17 @@ function deleteTask2(){
     const mainfocus = localStorage.getItem('MAIN');
     document.getElementById('content').innerHTML = mainfocus;
     document.getElementById('focusToday').innerHTML = "What is your main focus Today?"
+    form.style.display = "flex"
+    form.style.alignItems = "center"
+}
+
+// for deleting the random quote 
+function deleteTask3(){
+    var form = document.getElementById('newquote1');
+    localStorage.removeItem('NEWQUOTE');
+    const newquote = localStorage.getItem('NEWQUOTE');
+    document.getElementById('addnewQuote').innerHTML = newquote;
+    document.getElementById('addQuote').innerHTML = "Add Quote"
     form.style.display = "flex"
     form.style.alignItems = "center"
 }

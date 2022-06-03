@@ -1,0 +1,60 @@
+.qoutes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .qoutes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 600px;
+    height: 30%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    background-color: rgba(60, 60, 60, 0.5);
+  }
+  .qoutes h1{
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: var(--primary-color);
+  }
+
+  .author {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-size: 1rem;
+    color:var(--primary-color);
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  
+    .next{
+      font-family: 'Rancho', cursive;
+      }
+  }
+  .buttons button {
+    cursor: pointer;
+    border: none;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .buttons button:hover{
+      color: tomato;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .fa-twitter {
+    margin-right: 5px;
+  }

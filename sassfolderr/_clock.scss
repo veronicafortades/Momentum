@@ -1,0 +1,11 @@
+.fullWrap{
+    display: flex;
+    justify-content: center;
+  }
+  #clock{
+    display: grid;
+    color:var(--primary-color);
+    font-size: 9vw;
+    justify-content: center;
+    align-items: center;
+  }

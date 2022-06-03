@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Asul&family=Rancho&display=swap');
+
+
+html, body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Rancho', cursive;
+    min-height: 100vh;
+    object-fit: cover;
+    align-items: center;
+    background: url(./images/ontario.jpg) no-repeat;
+    background-size: cover;
+    background-position:center;
+   
+}
+.container{
+    position: fixed;
+    top: 20%;
+    left: 35%;
+}
+.logo{
+    margin-top: 1rem;
+    text-align: center;
+
+    img{
+        height: 6rem;
+        border-radius: 50%;
+        border: 3px solid #000033;
+    }
+}
+
+h2{
+    color: #000033;
+    text-align: center;
+}
+form{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    
+    input{
+        background: transparent;
+        font-size: 2rem;
+        color: #000033;
+        text-align: center;
+        font-family: inherit;
+    }
+
+    .no-outline{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom: 2px solid #000033;
+        background-color: transparent;
+    }
+
+    .no-outline:focus {
+        outline: none;
+    }
+    
+
+    .button {
+        input{
+            border: none;
+            cursor: pointer;
+    
+        }
+
+        input:hover{
+            color: #fff;
+        }
+    }
+    
+}
+
+ 
+
+
+
+

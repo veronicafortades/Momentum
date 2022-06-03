@@ -1,0 +1,28 @@
+#close1{
+    font-weight: lighter;
+  }
+  #close1:hover{
+    color: rgb(185, 33, 6);
+  }
+  .icon1 i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+  }
+  .icon1 i:hover{
+    opacity: 1;
+  }
+  button{
+      background: transparent;
+      border: none;
+  }
+  .content span i{
+    opacity: 0;
+    color: rgb(185, 33, 6);
+    transition: all 0.2s ease;
+    font-weight: lighter;
+  }
+  .content span i:hover{
+    opacity: 1;
+    cursor: pointer;
+  }

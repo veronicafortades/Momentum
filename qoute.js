@@ -1,6 +1,5 @@
 const text = document.querySelector('.quote');
 const auth = document.querySelector('.author');
-const button = document.querySelector('.twitter-share-button');
 const nextBtn = document.querySelector('.next');
 
 

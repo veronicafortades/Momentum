@@ -1,0 +1,161 @@
+/* todo style  */
+.wrapper{  
+    position: absolute;
+    right: -500px;
+    top: 25%;
+    background-color: rgba(60, 60, 60, 0.5);
+    max-width: 200px;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+.wrapper header{
+    font-size: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+.wrapper #close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.wrapper #close i{
+    color: #D4AF37;
+}
+.wrapper #close i:hover{
+    color: #e74c3c;
+}
+.wrapper .inputField{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 25px;
+}
+.inputField input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+.inputField input:focus{
+    border-color: var(--primary-color);
+}
+.inputField button{
+    width: 30px;
+    height: 100%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+    font-size: 21px;
+    outline: none;
+    background: #000333;
+    cursor: pointer;
+    border-radius: 3px;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.inputField button:hover,
+.footer button:hover{
+    background: 000033;
+}
+  .inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .todoList{
+    max-height: 100px;
+    overflow-y: auto;
+}
+.todoList li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    padding: 2px 2px 2px 2px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+    background: transparent;
+    color: #fff;
+}
+.todoList li .icon{
+    position: absolute;
+    right: -65px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    width: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.todoList li:hover{
+    color: var(--primary-color);
+}
+.todoList li:hover .icon{
+    right: 0px;
+}
+.todoList li:hover .icon i:hover{
+    color: red;
+}
+
+
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: #ccc;
+}
+.footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 5px;
+    background: #000033;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.6;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.footer span{
+    font-size: 10px;
+}
+
+.todo{
+  position: absolute;
+  right: 50px;
+  bottom: 5px;
+  
+}
+.todo h2{
+  color: #fff;
+  font-weight: lighter;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.todo h2:hover{
+  color: #e74c3c;
+}

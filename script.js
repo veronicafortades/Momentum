@@ -1,4 +1,3 @@
-
 // for name
 function setName(){
     const firstname = document.getElementById('first-name').value;
@@ -13,6 +12,11 @@ function setToday(){
 function setToday1(){
     const mainfocus = document.getElementById('main-focus').value;
     localStorage.setItem("MAIN", mainfocus);
+}
+
+function setQuote(){
+    const newquote = document.getElementById('newquote1').value;
+    localStorage.setItem("NEWQUOTE", newquote);
 }
 
 //for the realtime clock
@@ -112,4 +116,3 @@ close1.onclick = ()=> {
     form.style.display = "none";
 }
 //for main focus  input hide
-
