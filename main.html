@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body onload="realtimeClock()">
+    <!-- for weather -->
+
+    <div class="container">
+        <div class="notification"> </div>
+        <div class="weather-container">
+            <div class="weather-icon">
+                <img src="icons/unknown.png" alt="">
+            </div>
+            <div class="temperature-value">
+                <p>- °<span>C</span></p>
+            </div>
+            <div class="temperature-description">
+                <p> - </p>
+            </div>
+            <div class="location">
+                <p>-</p>
+            </div>
+        </div>
+    </div>
+<div class="fullWrap">
+       <!-- Display the time  -->
+    <div class="main-container">
+
+        <div id="clock"></div>
+        
+        <!-- Display the Greetings  -->
+        <div class="greetings">
+            <span id="greet"></span>
+            <span id="result-firstname" ></span>
+            <span class="icon1"><i id="pen" class="fas fa-pen"></i></span>
+            
+            <form  method="get" id='form1'>
+                <input id="first-name" type="text" class="no-outline" required>
+                <span><i id="close1" class="fas fa-times-circle"></i></span>
+                <div class="button">
+                    <input type="submit" onclick="setName()" value=">>">
+                </div>
+            </form>
+        </div>
+        <!-- Display the main focus today  -->
+        <div class="today">
+            <h2 id="focusToday"></h2>
+            <form  method="get" id='form'>
+                <input id="main-focus" type="text" class="no-outline" required>
+                <div class="button">
+                    <input id="btnFocus" type="submit" onclick="setToday1()" value=">>">
+                </div>
+            </form>
+            <div class="content">
+                <h2 id="content"></h2>
+            </div>
+        </div>
+    </div>
+   
+</div> 
+  <!-- Display the qoute  -->
+
+<div class="qoutes">
+    <div class="qoutes-container">
+        <h1 class="quote"></h1>
+        <p class="author"></p>
+        <div class="buttons">
+            <button class="next">Next</button>
+        </div>
+    </div>
+</div>
+<!-- Display todo -->
+
+
+<div class="wrapper" id= "wrapper">
+    <header>Todo List</header>
+    <span id="close"><i class="fas fa-times-circle"></i></span>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      <!-- data are comes from local storage --> -->
+    </ul>
+    <div class="footer">
+      <span>You have <span class="pendingTasks"></span> pending tasks</span>
+      <button>Clear All</button>
+    </div>
+  </div> 
+  <div class="todo">
+      <h2 id="todo"><span><i class="fas fa-list"></i></span> Todo</h2>
+  </div>
+  <script src="qoute.js"></script>
+    <script src="todolist.js"></script>
+    <script src="script.js"></script>
+    <script src="storage.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

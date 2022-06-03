@@ -6,19 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum App</title>
     <link rel="stylesheet" href="welcome.css">
-    <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script defer nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body onload="realtimeClock()">
     <div class="container">
         <div class="logo">
             <img src="images/logo.png" alt="">
         </div>
-        <h2>Hello, What is your name?</h2>
-        <form action="today.html" method="get">
-            <input id="first-name" type="text" class="no-outline" required>
+        <h2>Hello, What is your focus today?</h2>
+        <form action="main.html" method="get">
+            <input id="focus-today" type="text" class="no-outline" required>
             <div class="button">
-                <input type="submit" onclick="setName()" value=">>">
+                <input type="submit" onclick="setToday()" value=">>"> 
             </div>
         </form>
     </div>
