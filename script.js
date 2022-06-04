@@ -1,6 +1,6 @@
 // for name
-const setName = document.getElementById('setName');
-setName.onclick =()=> {
+
+function setName () {
     const firstname = document.getElementById('first-name').value;
     localStorage.setItem("FIRSTNAME", firstname);
 }
@@ -28,10 +28,7 @@ function realtimeClock(){
     var hours = rtClock.getHours();
     var minutes = rtClock.getMinutes();
     var seconds = rtClock.getSeconds();
-    // var day = rtClock.getUTCDay();
-    // var month = rtClock.getMonth();
-    // var date = rtClock.getDate();
-    // var year = rtClock.getFullYear();
+
 
     //Add Am and Pm system
     var amPm =( hours < 12) ? "AM" : "PM";
