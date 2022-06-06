@@ -9,7 +9,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(./images/ontario.jpg) no-repeat;
+  background: url(./images/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }

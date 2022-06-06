@@ -45,7 +45,7 @@ function deleteTask2(){
     form.style.alignItems = "center"
 }
 
-// for deleting the random quote 
+// for deleting the personal quote 
 function deleteTask3(){
     var form = document.getElementById('newquote1');
     localStorage.removeItem('NEWQUOTE');
